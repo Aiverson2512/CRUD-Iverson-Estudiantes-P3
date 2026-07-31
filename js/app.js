@@ -1,9 +1,11 @@
+// Arreglo principal para almacenar la lista de estudiantes
 const students = [];
 
 const table = document.getElementById("studentTable");
 // Creamos una variable para guardar el índice del estudiante que estamos editando (-1 significa que no estamos editando ninguno)
 let editIndex = -1;
 
+// Función para renderizar y actualizar la tabla de estudiantes en el HTML
 function renderStudents(){
 
     table.innerHTML = "";
