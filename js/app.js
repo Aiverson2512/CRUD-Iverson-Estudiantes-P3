@@ -1,5 +1,25 @@
 const students = [];
 
+const table =
+document.getElementById("studentTable");
+
+function renderStudents(){
+
+    table.innerHTML = "";
+
+    students.forEach(student => {
+
+        table.innerHTML += `
+        <tr>
+            <td>${student.name}</td>
+            <td>${student.career}</td>
+        </tr>
+        `;
+
+    });
+
+}
+
 const form = document.getElementById("studentForm");
 
 form.addEventListener("submit", function (e) {
@@ -15,6 +35,8 @@ form.addEventListener("submit", function (e) {
     };
 
     students.push(student);
+
+    renderStudents();
 
     console.log(students);
 
