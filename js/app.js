@@ -1,3 +1,4 @@
+// Arreglo principal para almacenar la lista de estudiantes
 const students = [];
 
 const table = document.getElementById("studentTable");
